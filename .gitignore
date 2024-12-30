@@ -5,3 +5,18 @@ __pycache__/
 .DS_Store
 instance/
 .env
+# Ignore system files
+.DS_Store
+
+# Ignore compiled Python files
+__pycache__/
+*.pyc
+*.pyo
+
+# Ignore database files
+instance/*.db
+
+# Ignore migrations cache
+migrations/__pycache__/
+instance
+migrations

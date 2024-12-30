@@ -98,5 +98,6 @@ def delete(expense_name):
         return jsonify({"message":"Expense Not Found"}), 404
     db.session.delete(data)
     db.session.commit()
-    return jsonify({"message":"Expense updated successfully", "expenses": expenses.details()}), 200
+    return jsonify({"message":"Expense updated successfully"}), 200
+    
     
